@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Timezone Digital Clock</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🕐 Global Time Zone Clock</h1>
+            <p>Real-time display across multiple time zones</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" id="timezoneInput" placeholder="Enter timezone (e.g., America/New_York)">
+            <button id="addBtn">+ Add Timezone</button>
+        </div>
+
+        <div class="timezones-grid" id="timezonesGrid">
+            <!-- Clocks will be dynamically added here -->
+        </div>
+
+        <div class="preset-timezones">
+            <h3>Quick Add Presets:</h3>
+            <div class="preset-buttons">
+                <button class="preset-btn" data-tz="America/New_York">New York (EST)</button>
+                <button class="preset-btn" data-tz="Europe/London">London (GMT)</button>
+                <button class="preset-btn" data-tz="Europe/Paris">Paris (CET)</button>
+                <button class="preset-btn" data-tz="Asia/Tokyo">Tokyo (JST)</button>
+                <button class="preset-btn" data-tz="Asia/Dubai">Dubai (GST)</button>
+                <button class="preset-btn" data-tz="Australia/Sydney">Sydney (AEDT)</button>
+                <button class="preset-btn" data-tz="Asia/Shanghai">Shanghai (CST)</button>
+                <button class="preset-btn" data-tz="America/Los_Angeles">Los Angeles (PST)</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
